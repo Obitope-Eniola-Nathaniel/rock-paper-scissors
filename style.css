@@ -29,3 +29,7 @@ section {
     display: inline-block;
     margin: 0 3px;
 }
+
+#com-img img{
+    margin-right: 10px;
+}
