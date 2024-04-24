@@ -17,7 +17,8 @@ function computerChoice() {
 let image = document.querySelectorAll(".pic")
 image.forEach((item) => {
     item.addEventListener("click", () => {
-   
+        
+        item.style.borderColor = "gold";
         computer = computerChoice()
         computerPlay = computer.getAttribute('src')
         player = item.getAttribute('src')
