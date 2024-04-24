@@ -1,4 +1,4 @@
-
+let result = document.querySelector(".result");
 
 
 function computerChoice() {
@@ -18,25 +18,30 @@ function computerChoice() {
 let image = document.querySelectorAll(".pic")
 image.forEach((item) => {
     item.addEventListener("click", () => {
-         
+   
         computer = computerChoice()
         computerPlay = computer.getAttribute('src')
         player = item.getAttribute('src')
 
         if (player === computerPlay) {
             console.log("Its a tie!")
+            result.innerHTML = 'Its a tie!'
         } 
-        else if (player === "rock.png" || computerPlay === "scissors.png") {
+        else if (player === "rock.png" && computerPlay === "scissors.png") {
             console.log("You win")
+            result.innerHTML = 'You win!'
         }
-        else if (player === "scissors.png" || computerPlay === "paper.png") {
+        else if (player === "scissors.png" && computerPlay === "paper.png") {
             console.log("You win")
+            result.innerHTML = 'You win!'
         }
-        else if (player === "paper.png" || computerPlay === "rock.png") {
+        else if (player === "paper.png" && computerPlay === "rock.png") {
             console.log("You win")
+            result.innerHTML = 'You win!'
         }
         else {
             console.log("You lose!")
+            result.innerHTML = 'You lose'
         }
 
         console.log(item.getAttribute('src'))
