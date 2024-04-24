@@ -1,5 +1,4 @@
 body {
-   
     box-sizing: border-box;
     background: #4b523f;
     font-family: "Sedan", serif;
@@ -28,5 +27,5 @@ section {
 
 .images img {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 3px;
 }

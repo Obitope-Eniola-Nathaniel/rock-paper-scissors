@@ -1,6 +1,8 @@
 const result = document.querySelector(".result");
 const computerView = document.querySelector(".computer-view")
 
+
+
 function computerChoice() {
     const images = ['rock.png', 'paper.png', 'scissors.png']
     const random = Math.floor(Math.random() * images.length)
@@ -18,8 +20,9 @@ let image = document.querySelectorAll(".pic")
 image.forEach((item) => {
     item.addEventListener("click", () => {
         
-        item.style.borderColor = "gold";
+        item.style.borderColor = "purple";
         computer = computerChoice()
+        
         computerPlay = computer.getAttribute('src')
         player = item.getAttribute('src')
 
@@ -46,8 +49,10 @@ image.forEach((item) => {
 
         console.log(item.getAttribute('src'))
         console.log(computer.getAttribute('src'))
-        computerView.style.display = "block";
-      
+
+        setTimeout(() => { 
+            computerView.style.display = "block";
+        }, "100");
     })
 
 })
