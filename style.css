@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: #4b523f;
+}
+
+.computer-view {
+    display: none;
+}
+
+section img {
+    border: 2px solid #d4ff17b4;
+    border-radius: 5px;
+}
+
+section {
+    color: white;
+    align-items: center;
+}

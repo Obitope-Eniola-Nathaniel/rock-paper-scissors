@@ -1,5 +1,5 @@
-let result = document.querySelector(".result");
-
+const result = document.querySelector(".result");
+const computerView = document.querySelector(".computer-view")
 
 function computerChoice() {
     const images = ['rock.png', 'paper.png', 'scissors.png']
@@ -8,10 +8,9 @@ function computerChoice() {
     const imgElement = document.querySelector("#computer-pick")
     const computerText = document.querySelector(".computer-plays")
     // imgElement.setAttribute('src', images[random])
-    computerText.innerHTML = 'computer plays'
+    computerText.innerHTML = 'computer plays...'
     imgElement.src = images[random]
     return imgElement
-  
 }
 
 
@@ -46,6 +45,7 @@ image.forEach((item) => {
 
         console.log(item.getAttribute('src'))
         console.log(computer.getAttribute('src'))
+        computerView.style.display = "block";
       
     })
 
