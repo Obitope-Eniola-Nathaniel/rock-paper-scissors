@@ -104,10 +104,11 @@ image.forEach((item) => {
       
             result.innerHTML = 'You lose'
             computerScore += 1
+            console.log(computerScore)
             result.style.color = "red"
             sound2.play()
 
-            document.getElementById("myScore").innerText = computerScore
+            document.getElementById("comScore").innerText = computerScore
         }
 
         console.log(item.getAttribute('src'))
