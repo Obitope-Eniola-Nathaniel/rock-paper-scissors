@@ -8,6 +8,9 @@ body {
 
 .computer-view {
     display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 section img {
@@ -23,6 +26,9 @@ section {
 
 .images {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .images img {
@@ -32,4 +38,23 @@ section {
 
 #com-img img{
     margin-right: 10px;
+}
+
+.tech-name {
+    color: #8cc22f;
+}
+
+.game-name {
+    color: #2aa160;
+    font-size: 20px;
+}
+
+span {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
