@@ -66,3 +66,12 @@ header {
     align-items: center;
 }
 
+#des{
+    background-color:#302e2e ;
+    text-align: center;
+    padding: 7px 7px 14px 7px;
+    border-radius: 7px;
+    margin-top: 45px;
+    font-size: 16px;
+    color: white;
+}
