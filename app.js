@@ -5,6 +5,7 @@ const image = document.querySelectorAll(".pic")
 
 const result = document.querySelector(".result");
 const computerView = document.querySelector(".computer-view")
+const username = document.querySelector(".username")
 
 
 //I'm also importing player and computer score span here
@@ -16,6 +17,12 @@ const sound1 = new Audio("click.wav")
 const sound2 = new Audio("loose.wav")
 const sound3 = new Audio("win.wav")
 
+const playerName = prompt("Your user name: ")
+if (playerName) {
+    username.innerText = playerName
+} else {
+    username.innerText = "Player"
+}
 
 
 function computerChoice() {
@@ -63,12 +70,12 @@ image.forEach((item) => {
 
         if (player === computerPlay) {
            
-            result.innerHTML = 'Its a tie!'
+            result.innerHTML = 'Its a tie! You both played same'
             result.style.color = "yellow"
         } 
         else if (player === "rock.png" && computerPlay === "scissors.png") {
          
-            result.innerHTML = 'You win!'
+            result.innerHTML = 'You win! rock smashed scissors'
             playerScore += 1
             result.style.color = "green"
             sound3.play()
@@ -77,7 +84,7 @@ image.forEach((item) => {
         }
         else if (player === "scissors.png" && computerPlay === "paper.png") {
         
-            result.innerHTML = 'You win!'
+            result.innerHTML = 'You win! scissors cut paper'
             playerScore += 1
             result.style.color = "green"
             sound3.play()
@@ -86,7 +93,7 @@ image.forEach((item) => {
         }
         else if (player === "paper.png" && computerPlay === "rock.png") {
         
-            result.innerHTML = 'You win!'
+            result.innerHTML = 'You win! paper wrapped rock'
             playerScore += 1
             result.style.color = "green"
             sound3.play()
